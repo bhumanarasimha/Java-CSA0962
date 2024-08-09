@@ -1,0 +1,23 @@
+public class SecondLargestNumber {
+    public static void main(String[] args) {
+        int[] numbers = {5, 3, 9, 2, 8, 7}; 
+
+        int largest = Integer.MIN_VALUE;
+        int S_Largest = Integer.MIN_VALUE;
+
+        for (int number : numbers) {
+            if (number > largest) {
+                S_Largest = largest;
+                largest = number;
+            } else if (number > S_Largest && number != largest) {
+                S_Largest = number;
+            }
+        }
+
+        if (S_Largest == Integer.MIN_VALUE) {
+            System.out.println("There is no second largest number.");
+        } else {
+            System.out.println("The second largest number is: " + secondLargest);
+        }
+    }
+}
