@@ -1,17 +1,13 @@
-class ReverseString {
-  public static void main(String[] args) {
-    String str = "Radar", reverseStr = "";
-    int strLength = str.length();
-
-    for (int i = (strLength - 1); i >=0; --i) {
-      reverseStr = reverseStr + str.charAt(i);
-    }
-
-    if (str.toLowerCase().equals(reverseStr.toLowerCase())) {
-      System.out.println(" Palindrome String.");
-    }
-    else {
-      System.out.println("  not a Palindrome String.");
-    }
-  }
-}
+public class ReverseString {  
+    public static void main(String[] args) {  
+        String input = "Narasimha";  
+        String reversed = "";  
+         
+        for (int i = input.length() - 1; i >= 0; i--) {  
+            reversed += input.charAt(i);  
+        }   
+          
+        System.out.println("Original String: " + input);  
+        System.out.println("Reversed String: " + reversed);  
+    }  
+}  
